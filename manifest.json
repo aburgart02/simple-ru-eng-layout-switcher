@@ -1,0 +1,36 @@
+{
+  "name": "Simple ENG-RU Layout Switcher",
+  "description": "",
+  "version": "1.0",
+  "manifest_version": 3,
+
+  "action": {
+    "default_icon": {
+      "16": "/icons/icon16.png",
+      "32": "/icons/icon32.png",
+      "48": "/icons/icon48.png",
+      "128": "/icons/icon128.png"
+    },
+    "default_popup": "/ui/popup.html"
+  },
+  "icons": {
+    "16": "/icons/icon16.png",
+    "32": "/icons/icon32.png",
+    "48": "/icons/icon48.png",
+    "128": "/icons/icon128.png"
+  },
+
+  "background": {
+    "service_worker": "/scripts/background.js"
+  },
+  "commands": {
+    "switch_layout": {
+      "suggested_key": {
+        "default": "Alt+Z"
+      },
+      "description": "Switch layout"
+    }
+  },
+
+  "permissions": ["activeTab", "scripting"]
+}
